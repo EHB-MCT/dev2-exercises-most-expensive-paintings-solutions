@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Werkcollege 2 - Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+  </head>
+  <body>
+    <h1>WC2 - The most expensive paintings by living artists</h1>
+    <main>
+      <section>
+        <h2>Sort by</h2>
+        <label><input type="radio" name="sortBy" value="price" checked>Price</label>
+        <label><input type="radio" name="sortBy" value="auctionDate" >Auction date</label>
+        <h2>Artist</h2>
+        <div class="radioWrapper" id="artistRadioWrapper">
+          <label><input type="radio" name="artist" value="all" checked>All</label>
+          <label><input type="radio" name="artist" value="Jeff Koons">Jeff Koons</label>
+          <label><input type="radio" name="artist" value="David Hockney">David Hockney</label>
+          <label><input type="radio" name="artist" value="Gerhard Richter">Gerhard Richter</label>
+          <label><input type="radio" name="artist" value="Lucian Freud">Lucian Freud</label>
+          <label><input type="radio" name="artist" value="Peter Doig">Peter Doig</label>
+          <label><input type="radio" name="artist" value="Damien Hirst">Damien Hirst</label>
+          <label><input type="radio" name="artist" value="Jasper Johns">Jasper Johns</label>
+          <label><input type="radio" name="artist" value="Willem de Kooning">Willem de Kooning</label>
+        </div>
+        <h2>Total Price</h2>
+        <h3 id="total">TOTAL</h3>
+      </section>
+      <section id="content_section">
+        <article>
+          <img src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_727,c_fit/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F180913114701-david-hockney-portrait-of-an-artist-pool-with-two-figures.jpg" alt="">
+          <div class="article_content_wrapper">
+            <div>
+              <h3>TITLE</h3>
+              <h4>PHOTOGRAPHER</h4>
+            </div>
+            <div>
+              <div class="price">PRICE</div>
+              <div class="date">DATE</div> 
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
